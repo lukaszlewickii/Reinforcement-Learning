@@ -78,7 +78,7 @@ def display_agent(agent, bandit):
 display_agent(agent, bandit)
 
 
-### EPSILON-GREEDY AGENT ###
+### EPSILON-GREEDY AGENT ### - do dokończenia
 
 class EpsilonGreedyAgent:
     def __init__(self, bandit, epsilon=0.1):
