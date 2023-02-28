@@ -5,6 +5,13 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 # %matplotlib inline
 
+"""
+Arguments:
+    k      - number of arms
+    minq   - minimum value of q_star for each arm
+    maxq   - maximum value of q_star for each arm
+    stddev - standard deviation that randomize the values while action is executed
+"""
 
 class Bandit:
     def __init__(self, q_star, stddev=2):
@@ -13,7 +20,6 @@ class Bandit:
 
     def execute(self, arm):
         return self.q_star[arm] + np.random.normal(scale=self.stddev)
-
 
 bandit = Bandit([4, 5, 3, 3, 1, 2, 0, 1, 5, 1])
 print(bandit.q_star)
