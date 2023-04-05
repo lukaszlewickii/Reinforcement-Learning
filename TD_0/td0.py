@@ -67,7 +67,12 @@ def td(pi, env, gamma=1.0, alpha=0.5, n_episodes=10, render=True):
     
     return V
 
+#modifty different values of alpha and gamma 
 #python td0.py -e 100
+#alpha = 0.5 best results
+
+# Final state values: [0.         0.50006661 0.50055272 0.50254783 0.50733597 0.49514761
+#  0.        ]
 
 if __name__ == "__main__":
     args = parser.parse_args()
